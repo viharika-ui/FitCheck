@@ -2,9 +2,8 @@
 __pycache__/
 *.py[codz]
 *$py.class
-#test images
+#output
 output/
-test_images/
 # C extensions
 *.so
 
