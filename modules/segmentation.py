@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 from PIL import Image
 from torchvision import transforms
-from u2net import U2NET
+from modules.u2net import U2NET
 
 
 class Segmenter:
@@ -51,7 +51,7 @@ class Segmenter:
 if __name__ == "__main__":
     seg = Segmenter("models/u2net.pth")
 
-    mask = seg.predict("test_images/image1.jpg")
+    mask = seg.predict("test_images/image4.jpg")
 
     cv2.imwrite("output/body_mask.png", mask)
 
