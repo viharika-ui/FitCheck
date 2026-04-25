@@ -1,16 +1,29 @@
-# Byte-compiled / optimized / DLL files
+# Python cache
 __pycache__/
 *.py[codz]
 *$py.class
-#output
+
+# Outputs
 output/
-test_images/
-__pycache__/
-*.pyc
+
+# Model files
 models/
+*.pth
+
+# Images (keep one sample)
+test_images/*
+!test_images/image1.jpg
+
+# Debug files
+*.png
+*.jpg
+*.jpeg
+
+# Env files
+.env
+
 # C extensions
 *.so
-
 # Distribution / packaging
 .Python
 build/
